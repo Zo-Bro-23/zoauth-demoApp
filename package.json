@@ -1,0 +1,22 @@
+{
+  "name": "zoauth-demoapp",
+  "version": "1.0.0",
+  "description": "Demo app for the ZoAuth npm package...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zo-Bro-23/zoauth-demoApp.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Zo-Bro-23/zoauth-demoApp/issues"
+  },
+  "homepage": "https://github.com/Zo-Bro-23/zoauth-demoApp#readme",
+  "dependencies": {
+    "zoauth": "^0.1.2"
+  }
+}
