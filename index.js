@@ -1,5 +1,4 @@
 const zoauth = require('zoauth')
-const express = zoauth.expressObject
 const app = zoauth.expressApp
 
 zoauth.setCredentials({
