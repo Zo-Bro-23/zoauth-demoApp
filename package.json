@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Zo-Bro-23/zoauth-demoApp#readme",
   "dependencies": {
-    "zoauth": "^0.1.2"
+    "zoauth": "^0.2.0"
   }
 }
