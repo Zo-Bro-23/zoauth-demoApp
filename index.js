@@ -30,6 +30,7 @@ zoauth.runAuthServer(r => {
             } else if (r.company == 'discord') {
                 r.responseObject.redirect(`https://demo.zoauth.zohan.tech?${r.company}=${res.user.username}`)
             } else {
+                console.log(`https://demo.zoauth.zohan.tech?${r.company}=${res.name}`)
                 r.responseObject.redirect(`https://demo.zoauth.zohan.tech?${r.company}=${res.name}`)
             }
         }, err => {
