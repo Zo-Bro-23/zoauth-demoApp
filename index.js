@@ -22,7 +22,6 @@ zoauth.setCredentials({
     }
 })
 zoauth.runAuthServer(r => {
-    console.log(r.data)
     zoauth.getDetails(r.company, r.data)
         .then(res => {
             if (r.company == 'github') {
@@ -30,7 +29,6 @@ zoauth.runAuthServer(r => {
             } else if (r.company == 'discord') {
                 r.responseObject.redirect(`https://demo.zoauth.zohan.tech?${r.company}=${res.user.username}`)
             } else {
-                r.responseObject.send(`https://demo.zoauth.zohan.tech?${r.company}=${res.name}`)
                 r.responseObject.redirect(`https://demo.zoauth.zohan.tech?${r.company}=${res.name}`)
             }
         }, err => {

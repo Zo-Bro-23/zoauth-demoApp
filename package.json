@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Zo-Bro-23/zoauth-demoApp#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "zoauth": "^0.3.2"
   }
 }
