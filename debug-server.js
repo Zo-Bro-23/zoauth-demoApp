@@ -16,7 +16,7 @@ zoauth.setCredentials({
         redirect_uri: "http://localhost:5210/callback/facebook/"
     },
     microsoft: {
-        redirect_uri: "http://localhost:5210/callback/microsoft/"
+        redirect_uri: "http://localhost:5210/callback/microsoft"
     },
     github: {
         redirect_uri: "http://localhost:5210/callback/github"
