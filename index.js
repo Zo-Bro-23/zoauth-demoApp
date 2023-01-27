@@ -35,7 +35,7 @@ zoauth.runAuthServer(r => {
             err.responseObject.redirect(`https://demo.zoauth.zohan.tech/${r.company}=${'An error occured. Please try again.'}`)
         })
 }, err => {
-    err.responseObject.redirect(`https://demo.zoauth.zohan.tech/${r.company}=${'An error occured. Please try again.'}`)
+    err.responseObject.redirect(`https://demo.zoauth.zohan.tech/${err.company}=${'An error occured. Please try again.'}`)
 })
 
 module.exports = app
