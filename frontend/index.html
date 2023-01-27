@@ -124,19 +124,21 @@
     ids.forEach(i => {
         document.cookie.split(';').forEach(r => {
             if (r.includes(i)) {
-                document.getElementById(i).className = "btn disabled"
-                document.getElementById(i + '-icon').src = "./tick.svg"
                 document.getElementById(i).style.color = 'pink'
+                                                                           
                 if (decodeURIComponent(r.split('=')[1]) == 'An error occured. Please try again.') {
-                    document.getElementById(i).innerHTML = `
+                   document.getElementById(i).innerHTML = `
           <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Error occured" src="./${i}.png">
           An error occured. Please try again.
-          `
-                }
-                document.getElementById(i).innerHTML = `
+          `                                                             
+                } else {
+                   document.getElementById(i).className = "btn disabled"
+                   document.getElementById(i + '-icon').src = "./tick.svg"
+                   document.getElementById(i).innerHTML = `
         <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Signed-in" src="./${i}.png">
         Signed in as: ${decodeURIComponent(r.split('=')[1])}
-        `
+        `                                                  
+                }
             }
         })
     })
